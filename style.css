@@ -1,0 +1,349 @@
+
+
+
+* {
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p {
+    color: gray;
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.375rem;
+}
+
+h1 {
+    color: #333;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(247, 247, 247);
+}
+
+.menu {
+    width: 100vw;
+    background: white;
+    /* border: 1px solid lightgray; */
+}
+
+.menu .items {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.menu ul {
+    height: 50px;
+    transition: height 0.25s;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+.menu ul li {
+    list-style-type: none;
+    padding: 1rem 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #333;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .menu ul {
+        flex-direction: column;
+        height: 250px;
+    }
+}
+
+
+
+.title {
+    padding: 6rem 0;
+}
+
+.title .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title .items h1 {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    padding: 0;
+}
+
+.title .items p {
+    /* font-size: 0.875rem;
+    letter-spacing: 0.0675rem;
+    color: gray;
+    margin: 0;
+    padding: 0; */
+}
+
+@media screen and (max-width: 1000px) {
+
+    .title .items h1 {
+        font-size: 2rem;
+    }
+
+    .title .items p {
+        font-size: 0.375rem;
+    }
+}
+
+
+
+.columns {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.columns .left {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.columns .left .article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.columns .left .article img {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    padding: 5%;
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.columns .left .article p {
+    /* color: gray;
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    padding-bottom: 0.5rem; */
+}
+
+.columns .left .article h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.columns .left .article p.text {
+    padding: 2rem 0;
+    font-size: 0.875rem;
+}
+
+.columns .left .article p.more {
+    padding: 1rem;
+    border: 1px solid lightgray;
+}
+
+@media screen and (max-width: 1000px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .columns .left {
+        max-width: 1000px;
+    }
+}
+
+
+
+
+.columns .right {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 4rem;
+}
+
+.columns .right .profile {
+
+}
+
+.columns .right .profile h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(77, 77, 77);
+    letter-spacing: 0.125rem;
+}
+
+.columns .right .profile img {
+    width: 90%;
+    padding: 5%;
+    background: white;
+    margin: 1rem 0;
+}
+
+.columns .right .profile p {
+    
+}
+
+.columns .right .latest {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.columns .right .latest h1 {
+    padding: 1rem 0;
+}
+
+.columns .right .latest .posts {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.columns .right .latest .posts img {
+    width: 100%;
+    height: 100px;
+    max-width: 100px;
+    object-fit: cover;
+}
+
+.columns .right .latest .posts .text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.columns .right .latest .posts .text p {
+    padding: 0;
+    margin: 0;
+}
+
+.columns .right .latest .posts .text h1 {
+    font-size: 0.875rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+.columns .right .newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.columns .right .newsletter h1 {
+    padding: 1rem 0;
+}
+
+.columns .right .newsletter input {
+    width: 80%;
+    height: 5px;
+    padding: 5%;
+    margin: 0.75rem 0;
+    font-size: 0.75rem;
+}
+
+.columns .right .newsletter a {
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+    display: block;
+    background: rgb(255, 69, 56);
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.columns .right .categories {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.columns .right .categories h1 {
+    padding: 1rem 0;
+}
+
+.columns .right .categories .list {
+    text-align: left;
+}
+
+.columns .right .categories .list p {
+    color: rgb(255, 69, 56);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .columns .right {
+        max-width: 1000px;
+        margin-left: 0;
+    }
+}
+
+.footer {
+    background: white;
+    width: 100vw;
+}
+
+.footer .columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.footer .columns .column-side {
+    width: 30%;
+}
+
+.footer .columns .column {
+    width: 13%;
+}
+
+.footer .columns .column h1,
+.footer .columns .column-side h1{
+    padding: 2rem 0;
+    font-size: 1.25rem;
+}
+
+.footer .columns .column p,
+.footer .columns .column-side p {
+    font-size: 0.875rem;
+    letter-spacing: 0.125rem;
+}
+
+.copy p {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer .columns {
+        flex-direction: column;
+    }
+
+    .footer .columns .column-side,
+    .footer .columns .column {
+        width: 100%;
+    }
+
+    .columns .right {
+        max-width: 1000px;
+        margin-left: 0;
+    }
+}
